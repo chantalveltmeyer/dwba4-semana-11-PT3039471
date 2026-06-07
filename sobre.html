@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - IFSP</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- React -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <header>
+        <nav class="menu">
+
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">EVENTOS</a></li>
+                <li><a href="#">CONTATO</a></li>
+                <li><a href="#">CURSOS</a></li>
+                <li><a href="entrar.html">ENTRAR</a></li>
+            </ul>
+
+            <div class="sobre">
+                <a href="sobre.html">SOBRE</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- LOGO -->
+    <section class="logo-area">
+        <img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/Logo.jpg">
+    </section>
+
+    <!-- REACT -->
+    <main id="root"></main>
+
+    <!-- FACEBOOK -->
+    <div class="facebook">
+        <img src="https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/facebook.png">
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>
+            IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias -
+            CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100
+        </p>
+    </footer>
+
+    <script type="text/babel">
+
+        function Sobre() {
+            return (
+                <div className="conteudo">
+
+                    <p>
+                        <strong>
+                            O Instituto Federal de Educação, Ciência e Tecnologia de São Paulo
+                        </strong> é uma autarquia federal de ensino.
+                    </p>
+
+                    <p>
+                        Fundada em 1909, como Escola de Aprendizes Artífices, é reconhecida pela sociedade paulista por sua excelência no ensino público gratuito de qualidade.
+                    </p>
+
+                    <p>
+                        Durante sua história, recebeu também os nomes de Escola Técnica Federal de São Paulo e Centro Federal de Educação Tecnológica de São Paulo.
+                    </p>
+
+                    <p>
+                        Com a transformação em Instituto, em dezembro de 2008, passou a ter relevância de universidade.
+                    </p>
+
+                    <p>
+                        Com a mudança, o Instituto Federal de São Paulo passou a destinar 50% das vagas para os cursos técnicos e, no mínimo, 20% das vagas para os cursos de licenciatura.
+                    </p>
+
+                    <p>
+                        Além dos cursos presenciais, o IFSP oferece cursos técnicos em Administração e em Informática para Internet.
+                    </p>
+
+                    <p>
+                        O IFSP é organizado em diversos câmpus e possui mais de 40 mil alunos matriculados.
+                    </p>
+
+                    <p>
+                        Localizado em <strong>Rua Pedro Vicente, 625 - Canindé - São Paulo - SP - Brasil - CEP: 01109-010</strong>
+                    </p>
+
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<Sobre />);
+
+    </script>
+
+</body>
+
+</html>
